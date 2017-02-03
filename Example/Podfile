@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Swarkn_Tests' do
+  pod 'Swarkn', :path => '../'
+  
+  
+end
