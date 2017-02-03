@@ -1,15 +1,12 @@
-# Swarkn
+<center>![Swarkn](http://imgur.com/download/Vm75xQ5)</center>
 
+<br></br>
 [![CI Status](http://img.shields.io/travis/kikettas/Swarkn.svg?style=flat)](https://travis-ci.org/kikettas/Swarkn)
 [![Version](https://img.shields.io/cocoapods/v/Swarkn.svg?style=flat)](http://cocoapods.org/pods/Swarkn)
 [![License](https://img.shields.io/cocoapods/l/Swarkn.svg?style=flat)](http://cocoapods.org/pods/Swarkn)
 [![Platform](https://img.shields.io/cocoapods/p/Swarkn.svg?style=flat)](http://cocoapods.org/pods/Swarkn)
+[![Swift](https://img.shields.io/cocoapods/p/Swarkn.svg?style=flat)](http://cocoapods.org/pods/Swarkn)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
