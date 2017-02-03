@@ -108,6 +108,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F7493D81E44F9A400BD3356 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F7493DA1E44F9B700BD3356 /* Foundation */,
+				1F7493D91E44F9AB00BD3356 /* UIKit */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		1F7493D91E44F9AB00BD3356 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1F7493BC1E44F8FB00BD3356 /* UIActivityType.swift */,
+				1F7493BD1E44F8FB00BD3356 /* UIColor.swift */,
+				1F7493BE1E44F8FB00BD3356 /* UIImage.swift */,
+				1F7493BF1E44F8FB00BD3356 /* UIImageView.swift */,
+				1F7493C01E44F8FB00BD3356 /* UINavigationControllers.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		1F7493DA1E44F9B700BD3356 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				1F7493B11E44F8FB00BD3356 /* Array.swift */,
+				1F7493B21E44F8FB00BD3356 /* Dictionary.swift */,
+				1F7493B71E44F8FB00BD3356 /* NSBundle.swift */,
+				1F7493B81E44F8FB00BD3356 /* NSDate.swift */,
+				1F7493B91E44F8FB00BD3356 /* NSLocale.swift */,
+				1F7493BB1E44F8FB00BD3356 /* String.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		1F7493DB1E44F9C900BD3356 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F7493B31E44F8FB00BD3356 /* DimmingPresentationController.swift */,
+				1F7493B61E44F8FB00BD3356 /* LoadingModalViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1F7493DC1E44F9D600BD3356 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				1F7493B41E44F8FB00BD3356 /* Documentation.swift */,
+				1F7493B51E44F8FB00BD3356 /* Email.swift */,
+				1F7493BA1E44F8FB00BD3356 /* Phone.swift */,
+				1F7493C11E44F8FB00BD3356 /* URL.swift */,
+				1F7493C31E44F8FB00BD3356 /* Validation.swift */,
+			);
+			name = Validation;
+			sourceTree = "<group>";
+		};
+		1F7493DD1E44F9E500BD3356 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1F7493B01E44F8FB00BD3356 /* Constants.swift */,
+				1F7493C21E44F8FB00BD3356 /* Utils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		747FAC496F97BEB63C3B486439D13289 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,26 +244,10 @@
 		8F067D763062FA8A7890A48CFF281043 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1F7493B01E44F8FB00BD3356 /* Constants.swift */,
-				1F7493B11E44F8FB00BD3356 /* Array.swift */,
-				1F7493B21E44F8FB00BD3356 /* Dictionary.swift */,
-				1F7493B31E44F8FB00BD3356 /* DimmingPresentationController.swift */,
-				1F7493B41E44F8FB00BD3356 /* Documentation.swift */,
-				1F7493B51E44F8FB00BD3356 /* Email.swift */,
-				1F7493B61E44F8FB00BD3356 /* LoadingModalViewController.swift */,
-				1F7493B71E44F8FB00BD3356 /* NSBundle.swift */,
-				1F7493B81E44F8FB00BD3356 /* NSDate.swift */,
-				1F7493B91E44F8FB00BD3356 /* NSLocale.swift */,
-				1F7493BA1E44F8FB00BD3356 /* Phone.swift */,
-				1F7493BB1E44F8FB00BD3356 /* String.swift */,
-				1F7493BC1E44F8FB00BD3356 /* UIActivityType.swift */,
-				1F7493BD1E44F8FB00BD3356 /* UIColor.swift */,
-				1F7493BE1E44F8FB00BD3356 /* UIImage.swift */,
-				1F7493BF1E44F8FB00BD3356 /* UIImageView.swift */,
-				1F7493C01E44F8FB00BD3356 /* UINavigationControllers.swift */,
-				1F7493C11E44F8FB00BD3356 /* URL.swift */,
-				1F7493C21E44F8FB00BD3356 /* Utils.swift */,
-				1F7493C31E44F8FB00BD3356 /* Validation.swift */,
+				1F7493DD1E44F9E500BD3356 /* Utils */,
+				1F7493DC1E44F9D600BD3356 /* Validation */,
+				1F7493DB1E44F9C900BD3356 /* ViewControllers */,
+				1F7493D81E44F9A400BD3356 /* Extensions */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
