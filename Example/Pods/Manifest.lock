@@ -1,0 +1,16 @@
+PODS:
+  - Swarkn (0.1.0)
+
+DEPENDENCIES:
+  - Swarkn (from `../`)
+
+EXTERNAL SOURCES:
+  Swarkn:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Swarkn: debf1495c5007ad8aec310b546eb37d697939027
+
+PODFILE CHECKSUM: 469ab127070dbf55855b743286a0a482d27f48d3
+
+COCOAPODS: 1.1.1
