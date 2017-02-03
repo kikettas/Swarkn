@@ -7,11 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F7493C41E44F8FB00BD3356 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B01E44F8FB00BD3356 /* Constants.swift */; };
+		1F7493C51E44F8FB00BD3356 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B11E44F8FB00BD3356 /* Array.swift */; };
+		1F7493C61E44F8FB00BD3356 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B21E44F8FB00BD3356 /* Dictionary.swift */; };
+		1F7493C71E44F8FB00BD3356 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B31E44F8FB00BD3356 /* DimmingPresentationController.swift */; };
+		1F7493C81E44F8FB00BD3356 /* Documentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B41E44F8FB00BD3356 /* Documentation.swift */; };
+		1F7493C91E44F8FB00BD3356 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B51E44F8FB00BD3356 /* Email.swift */; };
+		1F7493CA1E44F8FB00BD3356 /* LoadingModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B61E44F8FB00BD3356 /* LoadingModalViewController.swift */; };
+		1F7493CB1E44F8FB00BD3356 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B71E44F8FB00BD3356 /* NSBundle.swift */; };
+		1F7493CC1E44F8FB00BD3356 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B81E44F8FB00BD3356 /* NSDate.swift */; };
+		1F7493CD1E44F8FB00BD3356 /* NSLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493B91E44F8FB00BD3356 /* NSLocale.swift */; };
+		1F7493CE1E44F8FB00BD3356 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493BA1E44F8FB00BD3356 /* Phone.swift */; };
+		1F7493CF1E44F8FB00BD3356 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493BB1E44F8FB00BD3356 /* String.swift */; };
+		1F7493D01E44F8FB00BD3356 /* UIActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493BC1E44F8FB00BD3356 /* UIActivityType.swift */; };
+		1F7493D11E44F8FB00BD3356 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493BD1E44F8FB00BD3356 /* UIColor.swift */; };
+		1F7493D21E44F8FB00BD3356 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493BE1E44F8FB00BD3356 /* UIImage.swift */; };
+		1F7493D31E44F8FB00BD3356 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493BF1E44F8FB00BD3356 /* UIImageView.swift */; };
+		1F7493D41E44F8FB00BD3356 /* UINavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493C01E44F8FB00BD3356 /* UINavigationControllers.swift */; };
+		1F7493D51E44F8FB00BD3356 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493C11E44F8FB00BD3356 /* URL.swift */; };
+		1F7493D61E44F8FB00BD3356 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493C21E44F8FB00BD3356 /* Utils.swift */; };
+		1F7493D71E44F8FB00BD3356 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7493C31E44F8FB00BD3356 /* Validation.swift */; };
 		409DD09F62815DE8D0563B181B1DAE80 /* Pods-Swarkn_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B38866BFB10A061E9B9F40C1651DEB /* Pods-Swarkn_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4227525343FC58D021B298EB35A39CC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		4369713010B944D8AAC6E5334C158BC8 /* Swarkn-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C22B5F3228D500AE0A10B264791A716D /* Swarkn-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		702E4C29AA5EB132939A5C7864CBDEDB /* Pods-Swarkn_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D238AD5340494D88E16A13D0F5998396 /* Pods-Swarkn_Tests-dummy.m */; };
-		72641DBC9D4F1DD8E38541D7FB900736 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0351644E0A9328891A2CFD4080C9F3E9 /* ReplaceMe.swift */; };
 		B136EB11CA0E0596E2F3FB7F2F11CC0F /* Swarkn-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6E5ADF55E31AC2E0443392B791021D /* Swarkn-dummy.m */; };
 		E2B96C0FA0F74A9411293E06AD93B211 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -27,8 +46,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0351644E0A9328891A2CFD4080C9F3E9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		0602F8978994AA035D4881C5376BCC1D /* Pods_Swarkn_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swarkn_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7493B01E44F8FB00BD3356 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "\U0010Constants.swift"; sourceTree = "<group>"; };
+		1F7493B11E44F8FB00BD3356 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		1F7493B21E44F8FB00BD3356 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		1F7493B31E44F8FB00BD3356 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
+		1F7493B41E44F8FB00BD3356 /* Documentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Documentation.swift; sourceTree = "<group>"; };
+		1F7493B51E44F8FB00BD3356 /* Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		1F7493B61E44F8FB00BD3356 /* LoadingModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingModalViewController.swift; sourceTree = "<group>"; };
+		1F7493B71E44F8FB00BD3356 /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
+		1F7493B81E44F8FB00BD3356 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		1F7493B91E44F8FB00BD3356 /* NSLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLocale.swift; sourceTree = "<group>"; };
+		1F7493BA1E44F8FB00BD3356 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		1F7493BB1E44F8FB00BD3356 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		1F7493BC1E44F8FB00BD3356 /* UIActivityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityType.swift; sourceTree = "<group>"; };
+		1F7493BD1E44F8FB00BD3356 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		1F7493BE1E44F8FB00BD3356 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		1F7493BF1E44F8FB00BD3356 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		1F7493C01E44F8FB00BD3356 /* UINavigationControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllers.swift; sourceTree = "<group>"; };
+		1F7493C11E44F8FB00BD3356 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		1F7493C21E44F8FB00BD3356 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1F7493C31E44F8FB00BD3356 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		3E513AE9F2D32F56C341E3FC8FD4B7DC /* Swarkn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swarkn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A6DCA8424E21664BB028288CC2D4A8 /* Pods-Swarkn_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swarkn_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6FD3DA4AFFA47AA484D5CD33D4B42CEC /* Swarkn-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swarkn-prefix.pch"; sourceTree = "<group>"; };
@@ -142,7 +180,26 @@
 		8F067D763062FA8A7890A48CFF281043 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0351644E0A9328891A2CFD4080C9F3E9 /* ReplaceMe.swift */,
+				1F7493B01E44F8FB00BD3356 /* Constants.swift */,
+				1F7493B11E44F8FB00BD3356 /* Array.swift */,
+				1F7493B21E44F8FB00BD3356 /* Dictionary.swift */,
+				1F7493B31E44F8FB00BD3356 /* DimmingPresentationController.swift */,
+				1F7493B41E44F8FB00BD3356 /* Documentation.swift */,
+				1F7493B51E44F8FB00BD3356 /* Email.swift */,
+				1F7493B61E44F8FB00BD3356 /* LoadingModalViewController.swift */,
+				1F7493B71E44F8FB00BD3356 /* NSBundle.swift */,
+				1F7493B81E44F8FB00BD3356 /* NSDate.swift */,
+				1F7493B91E44F8FB00BD3356 /* NSLocale.swift */,
+				1F7493BA1E44F8FB00BD3356 /* Phone.swift */,
+				1F7493BB1E44F8FB00BD3356 /* String.swift */,
+				1F7493BC1E44F8FB00BD3356 /* UIActivityType.swift */,
+				1F7493BD1E44F8FB00BD3356 /* UIColor.swift */,
+				1F7493BE1E44F8FB00BD3356 /* UIImage.swift */,
+				1F7493BF1E44F8FB00BD3356 /* UIImageView.swift */,
+				1F7493C01E44F8FB00BD3356 /* UINavigationControllers.swift */,
+				1F7493C11E44F8FB00BD3356 /* URL.swift */,
+				1F7493C21E44F8FB00BD3356 /* Utils.swift */,
+				1F7493C31E44F8FB00BD3356 /* Validation.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -277,6 +334,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7493C51E44F8FB00BD3356 /* Array.swift in Sources */,
+				1F7493CF1E44F8FB00BD3356 /* String.swift in Sources */,
+				1F7493D01E44F8FB00BD3356 /* UIActivityType.swift in Sources */,
+				1F7493C91E44F8FB00BD3356 /* Email.swift in Sources */,
+				1F7493D11E44F8FB00BD3356 /* UIColor.swift in Sources */,
+				1F7493CA1E44F8FB00BD3356 /* LoadingModalViewController.swift in Sources */,
+				1F7493D51E44F8FB00BD3356 /* URL.swift in Sources */,
+				1F7493C71E44F8FB00BD3356 /* DimmingPresentationController.swift in Sources */,
+				1F7493CE1E44F8FB00BD3356 /* Phone.swift in Sources */,
+				1F7493CD1E44F8FB00BD3356 /* NSLocale.swift in Sources */,
+				1F7493D21E44F8FB00BD3356 /* UIImage.swift in Sources */,
+				1F7493CC1E44F8FB00BD3356 /* NSDate.swift in Sources */,
+				1F7493C81E44F8FB00BD3356 /* Documentation.swift in Sources */,
+				1F7493D71E44F8FB00BD3356 /* Validation.swift in Sources */,
+				1F7493C61E44F8FB00BD3356 /* Dictionary.swift in Sources */,
+				1F7493D41E44F8FB00BD3356 /* UINavigationControllers.swift in Sources */,
+				1F7493D61E44F8FB00BD3356 /* Utils.swift in Sources */,
+				1F7493CB1E44F8FB00BD3356 /* NSBundle.swift in Sources */,
+				1F7493C41E44F8FB00BD3356 /* Constants.swift in Sources */,
+				1F7493D31E44F8FB00BD3356 /* UIImageView.swift in Sources */,
 				702E4C29AA5EB132939A5C7864CBDEDB /* Pods-Swarkn_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +362,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72641DBC9D4F1DD8E38541D7FB900736 /* ReplaceMe.swift in Sources */,
 				B136EB11CA0E0596E2F3FB7F2F11CC0F /* Swarkn-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B11D23986D86F019FF34421E8F82CE01 /* Pods-Swarkn_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -448,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7FC9F49A338CC01E18C70743DEDEE4F /* Pods-Swarkn_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
