@@ -9,7 +9,14 @@ import Foundation
 
 extension Validation{
     public struct Documentation{
-        public static func isSpanishIDCardValid (_ id:String) -> Bool{
+        /**
+         It indicates if a spanish ID Card instroduced has a valid format
+         
+         - Parameter id: The id card to validate
+         - Returns: If the given id is valid.
+         */
+        
+        public static func isSpanishIDCardValid (id:String) -> Bool{
             var nifControl = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J",
                               "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
             var idnumber = id.trim()
@@ -48,7 +55,14 @@ extension Validation{
             }
         }
         
-        public static func isSSNValid(socialSecurityNumber ssn:String) -> Bool{
+        /**
+         It indicates if a spanish SSN instroduced has a valid format
+         
+         - Parameter socialSecurityNumber: The id card to validate
+         - Returns: If the given ssn is valid.
+         */
+        
+        public static func isSSNValid(ssn:String) -> Bool{
             let ssnPattern = try! NSRegularExpression(pattern:"(\\d{12})", options: [])
             let ssnMatches = ssnPattern.matches(in: ssn, options: [], range: NSMakeRange(0, ssn.characters.count))
             

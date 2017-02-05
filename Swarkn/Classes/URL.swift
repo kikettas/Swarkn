@@ -9,7 +9,16 @@ import Foundation
 
 extension Validation{
     public struct URL{
-        public static func isURLValid(_ string: String) -> Bool {
+        
+        /**
+         It indicates if a url instroduced has a valid format
+         
+         - Parameter url: The url to validate
+         
+         - Returns: If the given url is valid.
+         */
+        
+        public static func isURLValid(url: String) -> Bool {
             guard let url = Foundation.URL(string: string) else {return false}
             if !UIApplication.shared.canOpenURL(url) {return false}
             

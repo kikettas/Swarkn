@@ -9,15 +9,9 @@ import Foundation
 
 extension Validation{
     public struct Email{
+        
         /**
          It indicates if the email instroduced has a valid format
-         
-         ### Usage Example: ###
-         ````
-         let email = email@email.com
-         let isValidEmail = Validation.Email.isEmailValid(email:email)
-         print(isValidEmail) // true
-         ````
          
          - Parameter email: The email to validate
          - Returns: If the given email is valid.

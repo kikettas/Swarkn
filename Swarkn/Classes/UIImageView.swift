@@ -15,7 +15,15 @@ extension UIImageView{
         self.layer.shadowOpacity = 0.5;
     }
     
-    public func maskWithCircle(borderWith borderWitdth:CGFloat = 2, borderColor: CGColor = UIColor.white.cgColor){
+    /**
+     Mask an ImageView in a circle
+     
+     - Parameter borderWidth: border width
+     - Parameter borderColor: border color
+     
+     */
+    
+    public func maskWithCircle(borderWidth:CGFloat = 2, borderColor: CGColor = UIColor.white.cgColor){
         let layer = self.layer
         layer.cornerRadius = self.frame.size.width/2
         layer.borderWidth = borderWitdth

@@ -21,7 +21,19 @@ extension UIImage{
     }
     
     
-    public func resizedImage(_ newWidth: CGFloat, newHeight:CGFloat? = nil) -> UIImage? {
+    /**
+     It indicates resize a given image
+     
+     - Parameter newWidth: new width
+     - Parameter newHeight: new height
+     
+     ## Tip
+     Not use this method on the main thread.
+     
+     - Returns: Resized image
+     */
+    
+    public func resizedImage(newWidth: CGFloat, newHeight:CGFloat? = nil) -> UIImage? {
         
         let scale = newWidth / self.size.width
         var finalHeight:CGFloat
