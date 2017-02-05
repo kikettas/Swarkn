@@ -15,7 +15,7 @@ extension Validation{
          ### Usage Example: ###
          ````
          let email = email@email.com
-         let isValidEmail = Validation.Email.isValidEmail(email:email)
+         let isValidEmail = Validation.Email.isEmailValid(email:email)
          print(isValidEmail) // true
          ````
          
