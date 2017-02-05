@@ -28,7 +28,7 @@ extension Validation{
             }
 
             let expression = try! NSRegularExpression(pattern: pattern, options: [])
-            let matches = expression.matches(in: number, options: [] , range: NSMakeRange(0, number.characters.count))
+            let matches = expression.matches(in: withNumber, options: [] , range: NSMakeRange(0, withNumber.characters.count))
             
             return matches.count > 0
         }

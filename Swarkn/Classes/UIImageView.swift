@@ -26,7 +26,7 @@ extension UIImageView{
     public func maskWithCircle(borderWidth:CGFloat = 2, borderColor: CGColor = UIColor.white.cgColor){
         let layer = self.layer
         layer.cornerRadius = self.frame.size.width/2
-        layer.borderWidth = borderWitdth
+        layer.borderWidth = borderWidth
         layer.borderColor = borderColor
         layer.masksToBounds = true
     }

@@ -18,13 +18,13 @@ extension Validation{
          - Returns: If the given url is valid.
          */
         
-        public static func isURLValid(url: String) -> Bool {
-            guard let url = Foundation.URL(string: string) else {return false}
+        public static func isURLValid(urlString: String) -> Bool {
+            guard let url = Foundation.URL(string: urlString) else {return false}
             if !UIApplication.shared.canOpenURL(url) {return false}
             
             let regEx = "((https|http)://)((\\w|-)+)(([.]|[/])((\\w|-)+))+"
             let predicate = NSPredicate(format:"SELF MATCHES %@", argumentArray:[regEx])
-            return predicate.evaluate(with: string)
+            return predicate.evaluate(with: urlString)
         }
     }
 }
