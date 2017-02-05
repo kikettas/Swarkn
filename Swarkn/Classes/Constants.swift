@@ -8,6 +8,36 @@
 import Foundation
 import UIKit
 
+
+/**
+ It doubles the value given as a parameter.
+ 
+ ### Usage Example: ###
+ ````
+ let single = 5
+ let double = doubleValue(single)
+ print(double)
+ ````
+ 
+ * Use the `doubleValue(_:)` function to get the double value of any number.
+ * Only ***Int*** properties are allowed.
+ */
+
+
+/**
+ It doubles
+ 
+ ### Usage Example: ###
+ ````
+ let single = 5
+ let double = doubleValue(single)
+ print(double)
+ ````
+ 
+ * Use the `doubleValue(_:)` function to get the double value of any number.
+ * Only ***Int*** properties are allowed.
+ */
+
 public let IS_IPAD = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad)
 public let IS_IPHONE = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone)
 
