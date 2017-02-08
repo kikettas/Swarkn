@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FBAAED21E4B702000C6394B /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBAAED11E4B702000C6394B /* EnumCollection.swift */; };
 		4227525343FC58D021B298EB35A39CC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		4369713010B944D8AAC6E5334C158BC8 /* Swarkn-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C22B5F3228D500AE0A10B264791A716D /* Swarkn-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B136EB11CA0E0596E2F3FB7F2F11CC0F /* Swarkn-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6E5ADF55E31AC2E0443392B791021D /* Swarkn-dummy.m */; };
@@ -33,6 +34,7 @@
 		1F7493C11E44F8FB00BD3356 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		1F7493C21E44F8FB00BD3356 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1F7493C31E44F8FB00BD3356 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		1FBAAED11E4B702000C6394B /* EnumCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumCollection.swift; sourceTree = "<group>"; };
 		3E513AE9F2D32F56C341E3FC8FD4B7DC /* Swarkn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swarkn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A6DCA8424E21664BB028288CC2D4A8 /* Pods-Swarkn_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swarkn_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6FD3DA4AFFA47AA484D5CD33D4B42CEC /* Swarkn-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swarkn-prefix.pch"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				1F7493B81E44F8FB00BD3356 /* NSDate.swift */,
 				1F7493B91E44F8FB00BD3356 /* NSLocale.swift */,
 				1F7493BB1E44F8FB00BD3356 /* String.swift */,
+				1FBAAED11E4B702000C6394B /* EnumCollection.swift */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBAAED21E4B702000C6394B /* EnumCollection.swift in Sources */,
 				B136EB11CA0E0596E2F3FB7F2F11CC0F /* Swarkn-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90E1A0A7DFF2109B49B554E271C558DC /* Swarkn.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -352,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90E1A0A7DFF2109B49B554E271C558DC /* Swarkn.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
