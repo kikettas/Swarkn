@@ -111,7 +111,6 @@
 				1F7493B81E44F8FB00BD3356 /* NSDate.swift */,
 				1F7493B91E44F8FB00BD3356 /* NSLocale.swift */,
 				1F7493BB1E44F8FB00BD3356 /* String.swift */,
-				1FBAAED11E4B702000C6394B /* EnumCollection.swift */,
 				1F30AD611E4CD92C007D793A /* Collection.swift */,
 			);
 			name = Foundation;
@@ -143,6 +142,7 @@
 			children = (
 				1F7493B01E44F8FB00BD3356 /* Constants.swift */,
 				1F7493C21E44F8FB00BD3356 /* Utils.swift */,
+				1FBAAED11E4B702000C6394B /* EnumCollection.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";

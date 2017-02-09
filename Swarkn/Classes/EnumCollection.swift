@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol EnumCollection : Hashable {}
+public protocol EnumCollection : Hashable {}
 
 extension EnumCollection {
     
