@@ -9,8 +9,15 @@
 import Foundation
 
 protocol EnumCollection : Hashable {}
+
 extension EnumCollection {
-    static func cases() -> AnySequence<Self> {
+    
+    /**
+     Returns all cases of a EnumCollection
+          
+     - Returns: all enum cases
+     */
+    public static func cases() -> AnySequence<Self> {
         typealias S = Self
         return AnySequence { () -> AnyIterator<S> in
             var raw = 0

@@ -18,7 +18,7 @@ extension CLLocationCoordinate2D {
      - Parameter WKT: Location representation. i.e: POINT(40.123321, 3.123123)     
      */
     
-    init?(WKT: String) {
+    public init?(WKT: String) {
         let WKTSeparationCharacters = CharacterSet(charactersIn: "() ")
         let WKTSeparated = WKT.components(separatedBy: WKTSeparationCharacters)
         
