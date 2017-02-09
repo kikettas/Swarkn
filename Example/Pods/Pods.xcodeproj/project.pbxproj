@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F30AD601E4CD652007D793A /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30AD5F1E4CD652007D793A /* CLLocationCoordinate2D.swift */; };
 		1FBAAED21E4B702000C6394B /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBAAED11E4B702000C6394B /* EnumCollection.swift */; };
 		4227525343FC58D021B298EB35A39CC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		4369713010B944D8AAC6E5334C158BC8 /* Swarkn-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C22B5F3228D500AE0A10B264791A716D /* Swarkn-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F30AD5F1E4CD652007D793A /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		1F7493B01E44F8FB00BD3356 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "\U0010Constants.swift"; sourceTree = "<group>"; };
 		1F7493B11E44F8FB00BD3356 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		1F7493B21E44F8FB00BD3356 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -68,9 +70,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F30AD5E1E4CD635007D793A /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				1F30AD5F1E4CD652007D793A /* CLLocationCoordinate2D.swift */,
+			);
+			name = CoreLocation;
+			sourceTree = "<group>";
+		};
 		1F7493D81E44F9A400BD3356 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1F30AD5E1E4CD635007D793A /* CoreLocation */,
 				1F7493DA1E44F9B700BD3356 /* Foundation */,
 				1F7493D91E44F9AB00BD3356 /* UIKit */,
 			);
@@ -314,6 +325,7 @@
 			files = (
 				1FBAAED21E4B702000C6394B /* EnumCollection.swift in Sources */,
 				B136EB11CA0E0596E2F3FB7F2F11CC0F /* Swarkn-dummy.m in Sources */,
+				1F30AD601E4CD652007D793A /* CLLocationCoordinate2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
