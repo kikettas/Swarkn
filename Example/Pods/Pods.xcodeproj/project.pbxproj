@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F30AD601E4CD652007D793A /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30AD5F1E4CD652007D793A /* CLLocationCoordinate2D.swift */; };
 		1F30AD621E4CD92C007D793A /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30AD611E4CD92C007D793A /* Collection.swift */; };
+		1F7E62231E4F20C2001D1CA7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E62221E4F20C2001D1CA7 /* UIView.swift */; };
 		1FBAAED21E4B702000C6394B /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBAAED11E4B702000C6394B /* EnumCollection.swift */; };
 		4227525343FC58D021B298EB35A39CC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		4369713010B944D8AAC6E5334C158BC8 /* Swarkn-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C22B5F3228D500AE0A10B264791A716D /* Swarkn-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,11 +34,11 @@
 		1F7493BC1E44F8FB00BD3356 /* UIActivityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityType.swift; sourceTree = "<group>"; };
 		1F7493BD1E44F8FB00BD3356 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		1F7493BE1E44F8FB00BD3356 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		1F7493BF1E44F8FB00BD3356 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		1F7493C01E44F8FB00BD3356 /* UINavigationControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllers.swift; sourceTree = "<group>"; };
 		1F7493C11E44F8FB00BD3356 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		1F7493C21E44F8FB00BD3356 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1F7493C31E44F8FB00BD3356 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		1F7E62221E4F20C2001D1CA7 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		1FBAAED11E4B702000C6394B /* EnumCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumCollection.swift; sourceTree = "<group>"; };
 		3E513AE9F2D32F56C341E3FC8FD4B7DC /* Swarkn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swarkn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A6DCA8424E21664BB028288CC2D4A8 /* Pods-Swarkn_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swarkn_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -96,8 +97,8 @@
 				1F7493BC1E44F8FB00BD3356 /* UIActivityType.swift */,
 				1F7493BD1E44F8FB00BD3356 /* UIColor.swift */,
 				1F7493BE1E44F8FB00BD3356 /* UIImage.swift */,
-				1F7493BF1E44F8FB00BD3356 /* UIImageView.swift */,
 				1F7493C01E44F8FB00BD3356 /* UINavigationControllers.swift */,
+				1F7E62221E4F20C2001D1CA7 /* UIView.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -326,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7E62231E4F20C2001D1CA7 /* UIView.swift in Sources */,
 				1FBAAED21E4B702000C6394B /* EnumCollection.swift in Sources */,
 				B136EB11CA0E0596E2F3FB7F2F11CC0F /* Swarkn-dummy.m in Sources */,
 				1F30AD601E4CD652007D793A /* CLLocationCoordinate2D.swift in Sources */,
