@@ -68,7 +68,7 @@ extension UIView{
      */
     
     
-    func setShadow(opacity:CGFLoat = 0.2, offset:CGSize = CGSize(width: 0, height: 2), radius: CGFLoat = 2) {
+    func setShadow(opacity:Float = 0.2, offset:CGSize = CGSize(width: 0, height: 2), radius: CGFloat = 2.0) {
         layer.shadowOpacity = opacity
         layer.shadowOffset = offset
         layer.shadowRadius = radius
@@ -82,7 +82,7 @@ extension UIView{
      
      */
     
-    func maskCircle(borderWidth:CGFLoat = 0, color:CGColor = UIColor.white.cgColor) {
+    func maskCircle(borderWidth:CGFloat = 0.0, color:CGColor = UIColor.white.cgColor) {
         self.layer.cornerRadius = self.bounds.size.width / 2
         self.layer.masksToBounds = true
         self.layer.borderWidth = borderWidth
