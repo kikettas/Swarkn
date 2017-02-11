@@ -21,7 +21,7 @@ extension UIView{
 
      */
     
-    func setBorderAndRadius(color: CGColor = UIColor.white.cgColor, width:CGFloat = 2.0, cornerRadius:CGFloat = 5){
+    public func setBorderAndRadius(color: CGColor = UIColor.white.cgColor, width:CGFloat = 2.0, cornerRadius:CGFloat = 5){
         self.layer.borderWidth = width
         self.layer.borderColor = color
         self.layer.cornerRadius = cornerRadius
@@ -68,7 +68,7 @@ extension UIView{
      */
     
     
-    func setShadow(opacity:Float = 0.2, offset:CGSize = CGSize(width: 0, height: 2), radius: CGFloat = 2.0) {
+    public func setShadow(opacity:Float = 0.2, offset:CGSize = CGSize(width: 0, height: 2), radius: CGFloat = 2.0) {
         layer.shadowOpacity = opacity
         layer.shadowOffset = offset
         layer.shadowRadius = radius
@@ -82,7 +82,7 @@ extension UIView{
      
      */
     
-    func maskCircle(borderWidth:CGFloat = 0.0, color:CGColor = UIColor.white.cgColor) {
+    public func maskCircle(borderWidth:CGFloat = 0.0, color:CGColor = UIColor.white.cgColor) {
         self.layer.cornerRadius = self.bounds.size.width / 2
         self.layer.masksToBounds = true
         self.layer.borderWidth = borderWidth
@@ -98,7 +98,7 @@ extension UIView{
      
      */
     
-    func fadeIn(duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+    public func fadeIn(duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
         UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.alpha = 1.0
         }, completion: completion)
@@ -113,7 +113,7 @@ extension UIView{
      
      */
     
-    func fadeOut(duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
+    public func fadeOut(duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
         UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.alpha = 0.0
         }, completion: completion)
@@ -129,7 +129,7 @@ extension UIView{
      
      */
     
-    func collapseTo(height:CGFloat, duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
+    public func collapseTo(height:CGFloat, duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
         UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: self.frame.width, height: height)
             
@@ -146,7 +146,7 @@ extension UIView{
      
      */
     
-    func expandTo(height:CGFloat,duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
+    public func expandTo(height:CGFloat,duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
         UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: self.frame.width, height: height)
         }, completion: completion)
