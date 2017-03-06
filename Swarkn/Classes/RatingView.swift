@@ -31,7 +31,7 @@ import UIKit
         }
     }
     
-    @IBInspectable public var fillImage:UIImage? = nil {
+    @IBInspectable public var filledImage:UIImage? = nil {
         didSet {
             setupButtons()
         }
@@ -43,22 +43,33 @@ import UIKit
         }
     }
     
-    @IBInspectable public var hightlighted:UIImage? = nil {
+    @IBInspectable public var hightlightedImage:UIImage? = nil {
         didSet {
             setupButtons()
         }
     }
     
-    
     override public init(frame: CGRect) {
         super.init(frame: frame)
-        
         setupButtons()
+        self.distribution = .fillEqually
+        
     }
     
     required public init(coder: NSCoder) {
         super.init(coder: coder)
         setupButtons()
+        self.distribution = .fillEqually
+    }
+    
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        self.distribution = .fillEqually
+    }
+    
+    public override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        self.distribution = .fillEqually
     }
     
     
@@ -85,9 +96,12 @@ import UIKit
             button.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
             button.widthAnchor.constraint(equalToConstant: buttonWidth).isActive = true
             button.setImage(emptyImage, for: .normal)
-            button.setImage(fillImage, for: .selected)
-            button.setImage(hightlighted, for: .highlighted)
-            button.setImage(hightlighted, for: [.highlighted, .selected])
+            button.setImage(filledImage, for: .selected)
+            button.setImage(hightlightedImage, for: .highlighted)
+            button.setImage(hightlightedImage, for: [.highlighted, .selected])
+            button.contentHorizontalAlignment = .fill
+            button.contentVerticalAlignment = .fill
+            button.imageView?.contentMode = .scaleAspectFit
             
             if(interaction){
                 button.addTarget(self, action: #selector(RatingView.tapped(button:)), for: .touchUpInside)
