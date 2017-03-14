@@ -21,8 +21,8 @@ extension Validation{
                               "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
             var idnumber = id.trim()
             
-            let dniPattern = try! NSRegularExpression(pattern:"((\\d{8})([-]?)([A-Z]{1}))", options: [])
-            let niePattern = try! NSRegularExpression(pattern:"(([X-Z]{1})([-]?)(\\d{7})([-]?)([A-Z]{1}))", options: [])
+            let dniPattern = try! NSRegularExpression(pattern:"((\\d{8})([-]?)([aA-zZ]{1}))", options: [])
+            let niePattern = try! NSRegularExpression(pattern:"(([xX-zZ]{1})([-]?)(\\d{7})([-]?)([aA-zZ]{1}))", options: [])
             
             let dniMatches = dniPattern.matches(in: idnumber, options: [], range: NSMakeRange(0, idnumber.characters.count))
             let nieMatches = niePattern.matches(in: idnumber, options: [], range: NSMakeRange(0, idnumber.characters.count))
