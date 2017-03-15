@@ -9,39 +9,39 @@
 import Foundation
 import UIKit
 
-class MessageBar: UIView {
+public class MessageBar: UIView {
     
     var messageBarHeight:CGFloat = 0
     var positionConstraint:NSLayoutConstraint!
     var messageBarPosition:MessageBarPosition!
     var didHide:(() -> ())!
     
-    enum MessageBarStyle:CGFloat{
+    public enum MessageBarStyle:CGFloat{
         case small = 20
         case medium = 50
         case large = 100
     }
     
-    enum MessageBarPosition{
+    public enum MessageBarPosition{
         case top
         case bottom
     }
     
-    enum MessageBarDuration:Double{
+    public enum MessageBarDuration:Double{
         case short = 2.0
         case long = 4.0
         case infinite = -1
     }
     
-    convenience init() {
+    public convenience init() {
         self.init(frame: .zero)
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -66,7 +66,7 @@ class MessageBar: UIView {
         return messageBar
     }
     
-    func startAnimations(duration:MessageBarDuration){
+    fileprivate func startAnimations(duration:MessageBarDuration){
         guard let superview = self.superview else{
             return
         }
@@ -159,7 +159,7 @@ class MessageBar: UIView {
         layoutIfNeeded()
     }
     
-    func hideBar(delay:Double = 0){
+    public func hideBar(delay:Double = 0){
         guard let superview = superview else{
             return
         }
