@@ -10,7 +10,8 @@ import Foundation
 
 open class DimmingPresentationController: UIPresentationController{
     fileprivate var dimmingView:UIView!
-
+    open var didTapOutside:(() -> ())?
+    
     override public init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
         self.setupDimmingView()
@@ -28,7 +29,7 @@ open class DimmingPresentationController: UIPresentationController{
     dynamic func handleTap() {
         presentingViewController.dismiss(animated: true, completion: nil)
     }
-
+    
     
     override open func presentationTransitionWillBegin() {
         
@@ -43,6 +44,7 @@ open class DimmingPresentationController: UIPresentationController{
             NSLayoutConstraint.constraints(withVisualFormat: "H:|[dimmingView]|",
                                            options: [], metrics: nil, views: ["dimmingView": dimmingView]))
         
+        dimmingView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(DimmingPresentationController.didTapOutsideAction)))
         //3
         
         guard let coordinator = presentedViewController.transitionCoordinator else {
@@ -67,5 +69,15 @@ open class DimmingPresentationController: UIPresentationController{
     
     override open func containerViewWillLayoutSubviews() {
         presentedView?.frame = frameOfPresentedViewInContainerView
+    }
+    
+    @objc private func didTapOutsideAction(){
+        if let didTapOutside = didTapOutside{
+            didTapOutside()
+        }
+    }
+    
+    open func setupDidTapOutside(didTap:(() -> ())?){
+        didTapOutside = didTap
     }
 }

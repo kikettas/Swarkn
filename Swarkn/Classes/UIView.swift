@@ -21,9 +21,9 @@ extension UIView{
 
      */
     
-    public func setBorderAndRadius(color: CGColor = UIColor.white.cgColor, width:CGFloat = 2.0, cornerRadius:CGFloat = 5){
+    public func setBorderAndRadius(color: UIColor = UIColor.white, width:CGFloat = 2.0, cornerRadius:CGFloat = 5){
         self.layer.borderWidth = width
-        self.layer.borderColor = color
+        self.layer.borderColor = color.cgColor
         self.layer.cornerRadius = cornerRadius
     }
     
@@ -50,11 +50,11 @@ extension UIView{
      
      */
     
-    public func maskWithCircle(borderWidth:CGFloat = 2, borderColor: CGColor = UIColor.white.cgColor){
+    public func maskWithCircle(borderWidth:CGFloat = 2, borderColor: UIColor = UIColor.white){
         let layer = self.layer
         layer.cornerRadius = self.frame.size.width/2
         layer.borderWidth = borderWidth
-        layer.borderColor = borderColor
+        layer.borderColor = borderColor.cgColor
         layer.masksToBounds = true
     }
     
@@ -72,21 +72,6 @@ extension UIView{
         layer.shadowOpacity = opacity
         layer.shadowOffset = offset
         layer.shadowRadius = radius
-    }
-    
-    /**
-     Mask as Circle
-     
-     - Parameter borderWidth: Border width
-     - Parameter color: Border color
-     
-     */
-    
-    public func maskCircle(borderWidth:CGFloat = 0.0, color:CGColor = UIColor.white.cgColor) {
-        self.layer.cornerRadius = self.bounds.size.width / 2
-        self.layer.masksToBounds = true
-        self.layer.borderWidth = borderWidth
-        self.layer.borderColor = color
     }
     
     /**
